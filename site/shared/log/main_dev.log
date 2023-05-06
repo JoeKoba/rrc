@@ -1,0 +1,1229 @@
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Match route "homepage" (/) for  with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:04 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Dec 26 13:21:04 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/home/templates/indexSuccess.php"
+Dec 26 13:21:04 symfony [info] {main} Set slot "page_title"
+Dec 26 13:21:04 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:04 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.slot_name AS e__slot_name, e.title AS e__title, e.description AS e__description, e.photo AS e__photo, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by, e.object_version AS e__object_version FROM editable_slot e WHERE (e.slot_name = ?) LIMIT 1 - (homepage)
+Dec 26 13:21:04 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:04 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:04 symfony [info] {main} Get slot "page_title"
+Dec 26 13:21:04 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:04 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:04 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:04 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:04 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:04 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:04 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:04 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:04 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:04 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:04 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Configuration 365.13 ms (15)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Factories 194.04 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Action "home/index" 0.12 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 79.20 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.35 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.76 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.19 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.35 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 31.08 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebDebugLogger} Component "home/birthday" 12.13 ms (1)
+Dec 26 13:21:04 symfony [info] {sfWebResponse} Send content (70721 o)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/jquery.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'jquery.js',)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.css with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.css',)
+Dec 26 13:21:04 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.js',)
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:04 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Configuration 10.88 ms (12)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Factories 19.48 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 648.97 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send content (73690 o)
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:05 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Configuration 2.15 ms (11)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Factories 674.36 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 27.70 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send content (2121 o)
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:05 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:05 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send header "Content-Type: text/css; charset=utf-8"
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Configuration 2.13 ms (11)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Factories 711.77 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 11.64 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:05 symfony [info] {sfWebResponse} Send content (28870 o)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:10 symfony [info] {frPatternRouting} Match route "homepage" (/) for  with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:11 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Dec 26 13:21:11 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/home/templates/indexSuccess.php"
+Dec 26 13:21:11 symfony [info] {main} Set slot "page_title"
+Dec 26 13:21:11 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:11 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.slot_name AS e__slot_name, e.title AS e__title, e.description AS e__description, e.photo AS e__photo, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by, e.object_version AS e__object_version FROM editable_slot e WHERE (e.slot_name = ?) LIMIT 1 - (homepage)
+Dec 26 13:21:11 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:11 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:11 symfony [info] {main} Get slot "page_title"
+Dec 26 13:21:11 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:11 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:11 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:11 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:11 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:11 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:11 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:11 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Configuration 3.04 ms (15)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Factories 24.61 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Action "home/index" 0.12 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 61.19 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.43 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.87 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.15 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.33 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 23.80 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Component "home/birthday" 10.29 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send content (70750 o)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.css with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.css',)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/jquery.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'jquery.js',)
+Dec 26 13:21:11 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.js',)
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:11 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Configuration 2.65 ms (11)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Factories 18.59 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.40 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send content (73690 o)
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:11 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/css; charset=utf-8"
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Configuration 2.68 ms (11)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Factories 43.23 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.51 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send content (28870 o)
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:11 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:11 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Configuration 2.67 ms (11)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Factories 60.19 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.37 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:11 symfony [info] {sfWebResponse} Send content (2121 o)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Match route "homepage" (/) for  with parameters array (  'module' => 'home',  'action' => 'index',)
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:12 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Dec 26 13:21:12 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/home/templates/indexSuccess.php"
+Dec 26 13:21:12 symfony [info] {main} Set slot "page_title"
+Dec 26 13:21:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.slot_name AS e__slot_name, e.title AS e__title, e.description AS e__description, e.photo AS e__photo, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by, e.object_version AS e__object_version FROM editable_slot e WHERE (e.slot_name = ?) LIMIT 1 - (homepage)
+Dec 26 13:21:12 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:12 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:12 symfony [info] {main} Get slot "page_title"
+Dec 26 13:21:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:12 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:12 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Configuration 3.21 ms (15)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Factories 18.15 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Action "home/index" 0.13 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 58.07 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (3)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.42 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.88 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.26 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.36 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 23.25 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Component "home/birthday" 10.98 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send content (70751 o)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/jquery.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'jquery.js',)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.css with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.css',)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:12 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.js',)
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:12 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Configuration 2.52 ms (11)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Factories 17.74 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.44 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send content (73690 o)
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:12 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/css; charset=utf-8"
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Configuration 2.31 ms (11)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Factories 33.41 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.67 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send content (28870 o)
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:12 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Configuration 2.67 ms (11)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Factories 49.49 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 6.35 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Dec 26 13:21:12 symfony [info] {sfWebResponse} Send content (2121 o)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:33 symfony [info] {frPatternRouting} Match route "sf_guard_signin" (/guard/login) for /guard/login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:33 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:33 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 26 13:21:33 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/sfGuardAuth/templates/_signin_form.php"
+Dec 26 13:21:33 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:33 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:33 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:33 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:33 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:33 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:33 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:33 symfony [info] {sfWebResponse} Send status "HTTP/1.0 401 Unauthorized"
+Dec 26 13:21:33 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:33 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Configuration 16.27 ms (17)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Factories 22.44 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 31.09 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 60.00 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 9.79 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.31 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.83 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.12 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.32 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 29.69 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Component "home/birthday" 17.67 ms (1)
+Dec 26 13:21:33 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 26 13:21:33 symfony [info] {sfWebResponse} Send content (70157 o)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:35 symfony [info] {frPatternRouting} Match route "sf_guard_forgot_password" (/guard/forgot_password) for /guard/forgot_password with parameters array (  'module' => 'sfGuardForgotPassword',  'action' => 'index',)
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:35 symfony [info] {sfGuardForgotPasswordActions} Call "sfGuardForgotPasswordActions->executeIndex()"
+Dec 26 13:21:35 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/sfGuardForgotPassword/templates/indexSuccess.php"
+Dec 26 13:21:35 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:35 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:35 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:35 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:35 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:35 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:35 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:35 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:36 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:37 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Dec 26 13:21:37 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:37 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Configuration 16.93 ms (17)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Factories 17.35 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Action "sfGuardForgotPassword/index" 5.25 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardForgotPassword/index" 1530.00 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.31 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.59 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.16 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.33 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 1509.14 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Component "home/birthday" 1491.97 ms (1)
+Dec 26 13:21:37 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+Dec 26 13:21:37 symfony [info] {sfWebResponse} Send content (67692 o)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Match route "sf_guard_forgot_password" (/guard/forgot_password) for /guard/forgot_password with parameters array (  'module' => 'sfGuardForgotPassword',  'action' => 'index',)
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:41 symfony [info] {sfGuardForgotPasswordActions} Call "sfGuardForgotPasswordActions->executeIndex()"
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.email_address = ?) - (serg@puhoff.com)
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Statement} execute : DELETE FROM sf_guard_forgot_password WHERE (user_id = ?) - (6)
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Statement} execute : INSERT INTO sf_guard_forgot_password (user_id, unique_key, expires_at, created_at, updated_at) VALUES (?, ?, NOW(), ?, ?) - (6, c1df5a521f0217ab1c8b3a9c662529b9, 2011-12-26 13:21:41, 2011-12-26 13:21:41)
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/plugins/sfDoctrineGuardPlugin/modules/sfGuardForgotPassword/templates/_send_request.php"
+Dec 26 13:21:41 symfony [info] {sfMailerMessageLoggerPlugin} Sending email "Forgot Password Request for puhoff" to "serg@puhoff.com"
+Dec 26 13:21:41 symfony [info] {sfFrontWebController} Redirect to "http://rostovroadclub.ru/index_dev.php/guard/login"
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send status "HTTP/1.0 302 Found"
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send header "Location: http://rostovroadclub.ru/index_dev.php/guard/login"
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Configuration 1.72 ms (9)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Factories 17.39 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Action "sfGuardForgotPassword/index" 197.26 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (4)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "sfGuardForgotPassword/_send_request" 6.80 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send content (121 o)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Dec 26 13:21:41 symfony [info] {frPatternRouting} Match route "sf_guard_signin" (/guard/login) for /guard/login with parameters array (  'module' => 'sfGuardAuth',  'action' => 'signin',)
+Dec 26 13:21:41 symfony [info] {myUser} Flag old flash messages ("notice")
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Dec 26 13:21:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Dec 26 13:21:41 symfony [info] {sfGuardAuthActions} Call "sfGuardAuthActions->executeSignin()"
+Dec 26 13:21:41 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/plugins/sfDoctrineGuardPlugin/modules/sfGuardAuth/templates/signinSuccess.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/modules/sfGuardAuth/templates/_signin_form.php"
+Dec 26 13:21:41 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:41 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/layout.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_ganalytics.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_header_menu.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_top_menu.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_flash.php"
+Dec 26 13:21:41 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20110822082848/apps/main/templates/_sidebar.php"
+Dec 26 13:21:41 symfony [info] {main} Call "home->executeBirthday()"
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Dec 26 13:21:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE()) - ()
+Dec 26 13:21:41 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send status "HTTP/1.0 401 Unauthorized"
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Configuration 2.98 ms (16)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Factories 17.48 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Action "sfGuardAuth/signin" 2.02 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} View "Success" for "sfGuardAuth/signin" 48.47 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "sfGuardAuth/_signin_form" 2.49 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "global/_ganalytics" 0.31 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.60 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 2.06 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.34 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 28.50 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Component "home/birthday" 16.84 ms (1)
+Dec 26 13:21:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Dec 26 13:21:41 symfony [info] {sfWebResponse} Send content (71028 o)
+Dec 26 13:21:41 symfony [info] {myUser} Remove old flash messages ("notice")
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Jan 19 21:29:14 symfony [info] {frPatternRouting} Match route "gps_online" (/online) for /online with parameters array (  'module' => 'gps',  'action' => 'online',)
+Jan 19 21:29:14 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Jan 19 21:29:14 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 16:07:45 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 16:07:45 symfony [info] {homeActions} Call "homeActions->executeRating()"
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND (e.event_type = "race" OR e.event_type = "marathon")) ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 16:07:45)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(e.id) AS e__0 FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.event_type = ? AND e.is_show_result = 1) - (2017, race)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, 2017-04-15 08:00:00)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND e.event_type = "race") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 16:07:45)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at <= ? AND e.event_type = "marathon") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 16:07:45)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon)
+Apr 21 16:07:45 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon, 2017-04-15 08:00:00)
+Apr 21 16:07:45 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php"
+Apr 21 16:07:45 symfony [info] {main} Set slot "page_title"
+Apr 21 16:07:45 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 16:07:45 symfony [notice] {sfWebDebugLogger}  Notice at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php on line 21 (Undefined variable: race_rating)
+Apr 21 16:07:45 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php"
+Apr 21 16:07:45 symfony [warning] {sfWebDebugLogger}  Warning at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php on line 10 (Invalid argument supplied for foreach())
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Match route "homepage" (/) for  with parameters array (  'module' => 'home',  'action' => 'index',)
+Apr 21 18:43:24 symfony [info] {myUser} Automatic user logout due to timeout
+Apr 21 18:43:24 symfony [info] {myUser} User is not authenticated
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(*) AS num_results FROM (SELECT s.id FROM sf_guard_remember_key s INNER JOIN sf_guard_user s2 ON s.user_id = s2.id WHERE s.remember_key = ? GROUP BY s.id) dctrn_count_query - (re6c2twfr00sgooc4ggscks04ko480g)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.user_id AS s__user_id, s.remember_key AS s__remember_key, s.ip_address AS s__ip_address, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.id AS s2__id, s2.first_name AS s2__first_name, s2.last_name AS s2__last_name, s2.email_address AS s2__email_address, s2.username AS s2__username, s2.algorithm AS s2__algorithm, s2.salt AS s2__salt, s2.password AS s2__password, s2.is_active AS s2__is_active, s2.is_super_admin AS s2__is_super_admin, s2.last_login AS s2__last_login, s2.photo AS s2__photo, s2.location AS s2__location, s2.mobile_phone AS s2__mobile_phone, s2.bycke AS s2__bycke, s2.rating_r AS s2__rating_r, s2.rating_m AS s2__rating_m, s2.birthday AS s2__birthday, s2.is_woman AS s2__is_woman, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_remember_key s INNER JOIN sf_guard_user s2 ON s.user_id = s2.id WHERE (s.remember_key = ?) - (re6c2twfr00sgooc4ggscks04ko480g)
+Apr 21 18:43:24 symfony [info] {myUser} User is authenticated
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_user_permission s2 ON s.id = s2.permission_id WHERE (s2.user_id IN (?)) - (6)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.user_id AS s2__user_id, s2.group_id AS s2__group_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_group s LEFT JOIN sf_guard_user_group s2 ON s.id = s2.group_id WHERE (s2.user_id IN (?)) - (6)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at, s2.group_id AS s2__group_id, s2.permission_id AS s2__permission_id, s2.created_at AS s2__created_at, s2.updated_at AS s2__updated_at FROM sf_guard_permission s LEFT JOIN sf_guard_group_permission s2 ON s.id = s2.permission_id WHERE (s2.group_id IN (?)) - (2)
+Apr 21 18:43:24 symfony [info] {myUser} Add credential(s) "admin"
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : UPDATE sf_guard_user SET last_login = ?, updated_at = ? WHERE id = ? - (2017-04-21 18:43:24, 2017-04-21 18:43:24, 6)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) - (6)
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:43:24 symfony [info] {homeActions} Call "homeActions->executeIndex()"
+Apr 21 18:43:24 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/indexSuccess.php"
+Apr 21 18:43:24 symfony [info] {main} Set slot "page_title"
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.slot_name AS e__slot_name, e.title AS e__title, e.description AS e__description, e.photo AS e__photo, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by, e.object_version AS e__object_version FROM editable_slot e WHERE (e.slot_name = ?) LIMIT 1 - (homepage)
+Apr 21 18:43:24 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:43:24 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:43:24 symfony [info] {main} Get slot "page_title"
+Apr 21 18:43:24 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_header_menu.php"
+Apr 21 18:43:24 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_top_menu.php"
+Apr 21 18:43:24 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_flash.php"
+Apr 21 18:43:24 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_sidebar.php"
+Apr 21 18:43:24 symfony [info] {main} Call "home->executeBirthday()"
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE() AND CONCAT(DAY(s.birthday), '.', MONTH(s.birthday)) <> '1.1') - ()
+Apr 21 18:43:24 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_birthday.php"
+Apr 21 18:43:24 symfony [info] {sfViewCacheTagManager} Cache for "@sf_cache_partial?module=blog&action=_latest&sf_cache_key=latest-blog-posts" exists
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Configuration 15.55 ms (16)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Factories 27.68 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (11)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Action "home/index" 0.07 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} View "Success" for "home/index" 51.91 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.28 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 1.37 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.25 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 19.23 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Component "home/birthday" 8.18 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Partial "home/_birthday" 1.11 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send content (96382 o)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.js',)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/jquery.js with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'jquery.js',)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:43:24 symfony [info] {frPatternRouting} Match route "sfDynamics_asset" (/dynamics/:name) for /dynamics/roadclub.css with parameters array (  'module' => 'sfDynamics',  'action' => 'asset',  'name' => 'roadclub.css',)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:43:24 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Configuration 7.87 ms (12)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Factories 35.35 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 17.28 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Apr 21 18:43:24 symfony [info] {sfWebResponse} Send content (2410 o)
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:43:24 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:43:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:43:24 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/javascript; charset=utf-8"
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Configuration 1.23 ms (11)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Factories 82.38 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 252.88 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send content (73690 o)
+Apr 21 18:43:25 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:43:25 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:43:25 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:43:25 symfony [info] {sfDynamicsActions} Call "sfDynamicsActions->executeAsset()"
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send header "Content-Type: text/css; charset=utf-8"
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Configuration 1.27 ms (11)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Factories 345.27 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} Action "sfDynamics/asset" 7.36 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebDebugLogger} View "None" for "sfDynamics/asset" 0.01 ms (1)
+Apr 21 18:43:25 symfony [info] {sfWebResponse} Send content (30470 o)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:43:28 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:43:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:43:29 symfony [info] {homeActions} Call "homeActions->executeRating()"
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND (e.event_type = "race" OR e.event_type = "marathon")) ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:43:29)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(e.id) AS e__0 FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.event_type = ? AND e.is_show_result = 1) - (2017, race)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, 2017-04-15 08:00:00)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND e.event_type = "race") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:43:29)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at <= ? AND e.event_type = "marathon") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:43:29)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon)
+Apr 21 18:43:29 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon, 2017-04-15 08:00:00)
+Apr 21 18:43:29 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php"
+Apr 21 18:43:29 symfony [info] {main} Set slot "page_title"
+Apr 21 18:43:29 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 18:43:29 symfony [notice] {sfWebDebugLogger}  Notice at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php on line 21 (Undefined variable: race_rating)
+Apr 21 18:43:29 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php"
+Apr 21 18:43:29 symfony [warning] {sfWebDebugLogger}  Warning at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php on line 10 (Invalid argument supplied for foreach())
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:06 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 18:45:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:06 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:07 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 18:45:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:07 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:12 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:45:12 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:45:12 symfony [info] {homeActions} Call "homeActions->executeRating()"
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND (e.event_type = "race" OR e.event_type = "marathon")) ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:12)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(e.id) AS e__0 FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.event_type = ? AND e.is_show_result = 1) - (2017, race)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, 2017-04-15 08:00:00)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND e.event_type = "race") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:12)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at <= ? AND e.event_type = "marathon") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:12)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon)
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon, 2017-04-15 08:00:00)
+Apr 21 18:45:12 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php"
+Apr 21 18:45:12 symfony [info] {main} Set slot "page_title"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php"
+Apr 21 18:45:12 symfony [notice] {sfWebDebugLogger}  Notice at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php on line 29 (Undefined variable: groups)
+Apr 21 18:45:12 symfony [warning] {sfWebDebugLogger}  Warning at /home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php on line 29 (Invalid argument supplied for foreach())
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 18:45:12 symfony [info] {main} Set slot "second_sidebar"
+Apr 21 18:45:12 symfony [info] {main} Call "home->executeTopYear()"
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.created_by AS t__created_by, SUM(t.distance) AS t__0 FROM training_log t LEFT JOIN sf_guard_user s ON t.created_by = s.id WHERE (t.tr_type IN (?, ?, ?, ?) AND YEAR(t.created_at) = YEAR(CURDATE())) GROUP BY t.created_by ORDER BY t__0 desc - (competition, training, stroll, trainer)
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_topYear.php"
+Apr 21 18:45:12 symfony [info] {main} Set slot "sidebar"
+Apr 21 18:45:12 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:45:12 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:45:12 symfony [info] {main} Get slot "page_title"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_header_menu.php"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_top_menu.php"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_flash.php"
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_sidebar.php"
+Apr 21 18:45:12 symfony [info] {main} Get slot "sidebar"
+Apr 21 18:45:12 symfony [info] {main} Call "home->executeBirthday()"
+Apr 21 18:45:12 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE() AND CONCAT(DAY(s.birthday), '.', MONTH(s.birthday)) <> '1.1') - ()
+Apr 21 18:45:12 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_birthday.php"
+Apr 21 18:45:12 symfony [info] {main} Get slot "second_sidebar"
+Apr 21 18:45:12 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:45:12 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 18:45:12 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Configuration 1.61 ms (15)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Factories 30.62 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (12)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Action "home/rating" 48.64 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} View "Success" for "home/rating" 44.33 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "home/_ratingTableArray" 6.52 ms (2)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "home/_ratingTimeTableArray" 0.41 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Component "home/topYear" 7.35 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "home/_topYear" 1.62 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 2.17 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 1.35 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.26 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 8.04 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Component "home/birthday" 6.05 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebDebugLogger} Partial "home/_birthday" 1.06 ms (1)
+Apr 21 18:45:12 symfony [info] {sfWebResponse} Send content (136428 o)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Match route "editable_content_admin_css" (/css/editable_content.css) for /css/editable_content.css with parameters array (  'module' => 'ioEditableContent',  'action' => 'css',  'sf_format' => 'css',)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:13 symfony [info] {frPatternRouting} Match route "editable_content_admin_js" (/js/editable_content.js) for /js/editable_content.js with parameters array (  'module' => 'ioEditableContent',  'action' => 'js',  'sf_format' => 'js',)
+Apr 21 18:45:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:45:13 symfony [info] {ioEditableContentActions} Call "ioEditableContentActions->executeCss()"
+Apr 21 18:45:13 symfony [info] {ioEditableContentActions} Change layout to ""
+Apr 21 18:45:13 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/plugins/ioEditableContentPlugin/modules/ioEditableContent/templates/cssSuccess.css.php"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send header "Content-Type: text/css; charset=utf-8"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Configuration 11.44 ms (12)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Factories 30.36 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Action "ioEditableContent/css" 0.14 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} View "Success" for "ioEditableContent/css" 4.45 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send content (1393 o)
+Apr 21 18:45:13 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:13 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:45:13 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:45:13 symfony [info] {ioEditableContentActions} Call "ioEditableContentActions->executeJs()"
+Apr 21 18:45:13 symfony [info] {ioEditableContentActions} Change layout to ""
+Apr 21 18:45:13 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/plugins/ioEditableContentPlugin/modules/ioEditableContent/templates/jsSuccess.js.php"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send header "Content-Type: application/javascript"
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Configuration 1.18 ms (11)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Factories 61.41 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.00 ms (2)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} Action "ioEditableContent/js" 0.14 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebDebugLogger} View "Success" for "ioEditableContent/js" 3.85 ms (1)
+Apr 21 18:45:13 symfony [info] {sfWebResponse} Send content (1614 o)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_create" (/sf_simple_comment.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_delete" (/sf_simple_comment/:id.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_filter" (/sf_simple_comment_admin/filter.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_batch" (/sf_simple_comment_admin/batch.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin" (/sf_simple_comment_admin.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_delete" (/sf_simple_comment_admin/:id.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_edit" (/sf_simple_comment_admin/:id/edit.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_object" (/sf_simple_comment_admin/:id/:action.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfDoctrineRoute "sf_simple_comment_admin_collection" (/sf_simple_comment_admin/:action/action.:sf_format)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset" (/dynamics/:name)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language" (/dynamics/l/:language/:name)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_theme" (/dynamics/t/:theme/:name)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Connect sfRoute "sfDynamics_asset_language_theme" (/dynamics/l/:language/t/:theme/:name)
+Apr 21 18:45:38 symfony [info] {frPatternRouting} Match route "current_rating" (/rating/:year) for /rating with parameters array (  'module' => 'home',  'action' => 'rating',  'year' => '2017',)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.id = ?) LIMIT 1 - (6)
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "ProfileFillingFilter"
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "swFilterFunctionalTest"
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "sfCacheFilter"
+Apr 21 18:45:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Apr 21 18:45:38 symfony [info] {homeActions} Call "homeActions->executeRating()"
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND (e.event_type = "race" OR e.event_type = "marathon")) ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:38)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT COUNT(e.id) AS e__0 FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.event_type = ? AND e.is_show_result = 1) - (2017, race)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.overall_rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND (e2.event_type = "race" OR e2.event_type = "marathon") AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, 2017-04-15 08:00:00)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at < ? AND e.event_type = "race") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:38)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.id AS e__id, e.started_at AS e__started_at, e.title AS e__title, e.description AS e__description, e.route_id AS e__route_id, e.distanse AS e__distanse, e.location AS e__location, e.event_type AS e__event_type, e.rating_type AS e__rating_type, e.show_in_calendar AS e__show_in_calendar, e.is_grouped AS e__is_grouped, e.is_show_result AS e__is_show_result, e.slug AS e__slug, e.created_at AS e__created_at, e.updated_at AS e__updated_at, e.created_by AS e__created_by, e.updated_by AS e__updated_by FROM event_post e WHERE (YEAR(e.started_at) = ? AND e.started_at <= ? AND e.event_type = "marathon") ORDER BY e.started_at DESC LIMIT 1 - (2017, 2017-04-21 18:45:38)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon)
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT e.user_id AS e__user_id, e.event_id AS e__event_id, e.end_time AS e__end_time, e.place AS e__place, e.rating AS e__rating, e.place_grouped AS e__place_grouped, e.rating_grouped AS e__rating_grouped, e.is_outdate AS e__is_outdate, e.is_withdrawal AS e__is_withdrawal, e.is_outrating AS e__is_outrating, e.overall_rating AS e__overall_rating, e.object_version AS e__object_version, s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at, SUM(e.rating) AS e__0 FROM event_member e LEFT JOIN event_post e2 ON e.event_id = e2.id LEFT JOIN sf_guard_user s ON e.user_id = s.id WHERE (YEAR(e2.started_at) = ? AND e2.event_type = ? AND e2.is_show_result = 1 AND e2.started_at < ?) GROUP BY e.user_id ORDER BY e__0 DESC, s.last_name - (2017, marathon, 2017-04-15 08:00:00)
+Apr 21 18:45:38 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/ratingSuccess.php"
+Apr 21 18:45:38 symfony [info] {main} Set slot "page_title"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTimeTableArray.php"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_ratingTableArray.php"
+Apr 21 18:45:38 symfony [info] {main} Set slot "second_sidebar"
+Apr 21 18:45:38 symfony [info] {main} Call "home->executeTopYear()"
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Statement} execute : SELECT t.id AS t__id, t.created_by AS t__created_by, SUM(t.distance) AS t__0 FROM training_log t LEFT JOIN sf_guard_user s ON t.created_by = s.id WHERE (t.tr_type IN (?, ?, ?, ?) AND YEAR(t.created_at) = YEAR(CURDATE())) GROUP BY t.created_by ORDER BY t__0 desc - (competition, training, stroll, trainer)
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_topYear.php"
+Apr 21 18:45:38 symfony [info] {main} Set slot "sidebar"
+Apr 21 18:45:38 symfony [info] {sfPHPView} Decorate content with "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:45:38 symfony [info] {sfPHPView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/layout.php"
+Apr 21 18:45:38 symfony [info] {main} Get slot "page_title"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_header_menu.php"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_top_menu.php"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_flash.php"
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/templates/_sidebar.php"
+Apr 21 18:45:38 symfony [info] {main} Get slot "sidebar"
+Apr 21 18:45:38 symfony [info] {main} Call "home->executeBirthday()"
+Apr 21 18:45:38 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.photo AS s__photo, s.location AS s__location, s.mobile_phone AS s__mobile_phone, s.bycke AS s__bycke, s.rating_r AS s__rating_r, s.rating_m AS s__rating_m, s.birthday AS s__birthday, s.is_woman AS s__is_woman, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY) AND DATE_FORMAT(s.birthday, CONCAT(YEAR(CURDATE()), '-%m-%d')) >= CURDATE() AND CONCAT(DAY(s.birthday), '.', MONTH(s.birthday)) <> '1.1') - ()
+Apr 21 18:45:38 symfony [info] {sfPartialView} Render "/home/r/roadclub/site/releases/20160622151810/apps/main/modules/home/templates/_birthday.php"
+Apr 21 18:45:38 symfony [info] {main} Get slot "second_sidebar"
+Apr 21 18:45:38 symfony [info] {sfWebResponse} Send status "HTTP/1.0 200 OK"
+Apr 21 18:45:38 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+Apr 21 18:45:38 symfony [info] {sfWebResponse} Send header "Cache-Control: private"
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Configuration 1.82 ms (15)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Factories 30.10 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (12)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Action "home/rating" 48.13 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} View "Success" for "home/rating" 39.97 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "home/_ratingTableArray" 6.61 ms (2)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "home/_ratingTimeTableArray" 0.35 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Component "home/topYear" 8.43 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "home/_topYear" 1.06 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "global/_header_menu" 1.25 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "global/_top_menu" 1.43 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "global/_flash" 0.27 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "global/_sidebar" 9.63 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Component "home/birthday" 7.36 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebDebugLogger} Partial "home/_birthday" 1.27 ms (1)
+Apr 21 18:45:38 symfony [info] {sfWebResponse} Send content (136130 o)
